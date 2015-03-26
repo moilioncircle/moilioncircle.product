@@ -1,0 +1,34 @@
+INSERT INTO STUDENT (ID,NAME,GENDER)
+VALUES
+(1,'学生1',2),
+(2,'学生2',1),
+(3,'学生3',NULL),
+(4,'学生4',DEFAULT);
+
+INSERT INTO COURSE (ID,NAME) 
+VALUES
+(1,'课程1'),
+(2,'课程2'),
+(3,'课程3'),
+(4,'课程4');
+
+INSERT INTO STUDENT_COURSE_MAP (STUDENT_ID,COURSE_ID) 
+VALUES
+(1,1),
+(2,1),(2,2),
+(3,1),(3,2),(3,3),
+(4,1),(4,2),(4,3),(4,4);
+
+INSERT INTO EXAM (STUDENT_ID,COURSE_ID,SCORE) 
+VALUES
+(1,1,90),(1,2,70),(1,3,85),(1,4,80),
+(2,1,70),(2,2,85),(2,3,75),(2,4,80),
+(3,1,75),(3,2,85),(3,3,85),(3,4,65),
+(4,1,60),(4,2,75),(4,3,80),(4,4,85);
+
+INSERT INTO AUTOINCR (ID,NAME) 
+VALUES
+(1,'自增1'),
+(DEFAULT,'自增#1'),
+(5,'自增5'),
+(DEFAULT,'自增#2');
