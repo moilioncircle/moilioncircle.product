@@ -1,0 +1,18 @@
+例子:
+  ☐ 12个月(01-12)，带千分位的数（1,234）。（sublime）
+  ☐ CSV文件的域。（sublime）
+  ☐ SQL生成JavaBean，带注释和注解。（sublime）
+  ☐ sublime演示， java 演示（环视，贪婪，分组，引用）
+  ☐ 不编码，统计spring-framework源码，达到以下目标
+      ☐ 一共有多少个开发者（distinct @author）？
+      ☐ 每个开发者参与了多少行代码（粗略，有author就算）？
+
+---------
+
+  ☐ CVS样本（带引号和换行）
+  #1,"$1,990","ha,
+  a ""$imple"" way"
+
+  ☐ 单引号转义
+  it's "$imple"
+
