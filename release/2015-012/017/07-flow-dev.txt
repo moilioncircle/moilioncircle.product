@@ -1,0 +1,30 @@
+状态生命周期变化：
+　　　　　　TK-Design（51）
+　　　　　　　　↓（设计完毕/JP）
+　　　　　　TK-Approving（52）
+　　　　　　　　↓（承认完毕/JP）
+　　　　　　TK-Approved（53）
+　　　　　　　　↓（可以着手/JP）
+　　　　　　New（21）
+　　　　　　　　↓（指派担当/DL）
+　　　　　　TK-Assigned（22）/TK-Reopen（23）
+　　　　　　　　↓
+（Ｄｅｖ）－－－＋－－（Ｗｅｂ／Ｄｂ）
+↓（开发完毕/DL）　　　↓（开发完毕/DL）
+TK-Testing（24）　　TK-Checking（24）
+↓（测试完毕/DL）　　　↓（承认完毕/DL）
+TK-Testted（25）　　TK-Checked（25）
+↓（配置文件，　　　　　↓（等待更新正式/JP）
+↓　正式环境，　　　　　TK-UpDB（26）
+↓　没问题/DL）　　　　↓（更新正式完毕/DL）
+TK-Fiexed（31）　　　TK-Fiexed（31）
+↓（确认完毕/JP）　　　↓（确认完毕/JP）
+TK-Verifyed（41）　TK-Verifyed（41）
+↓（*exe,jar/DL）　　↓
+－－－－－－＋－－－－－
+　　　　　　↓（完整结束/JP）
+　　　　　　TK-Closed（42）
+
+==========================
+TK-Pending（43）： 任意状态暂停
+TK-Canceled（44）：任意状态中止

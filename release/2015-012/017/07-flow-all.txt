@@ -1,0 +1,38 @@
+﻿Ticket 通常有2个大分类：
+ * 需求。如，新功能，已有功能增强。
+ * 缺陷。如，程序bug，式样bug导致的数据维护等。
+
+Ticket 的通常处理流程如下：
+ 1. 提出者（日方）设计需求。(TK-Design)
+ 2. 提出者（日方）提出需求，并预定纳期。(TK-Approving)
+ 3. 审核者（日方）确认需求。(TK-Approved)
+ 4. 提出者指定负责担当(TK-Assigned)或空白(TK-New)。
+ 5. 管理者（组长）指派接受者（开发）和确认者（测试）。(TK-Assigned)
+ 6. 接受者确认纳期是否合理，需求内容是否明确。(TK-Dev)
+ 7. 接受者进行信息反馈和询问等。(TK-Dev)
+ 8. 接受者开发完毕，交付确认者确认。(TK-DevTest)
+ 9. 确认者确认完毕。(TK-Fixed)
+ 10. 提出者确认，如果成功(TK-Verified),如果失败，重新进行第7步。
+ 11. 功能发布。日方修改状态。(TK-Released)
+
+Ticket 状态变化如下：
+TK-Design(白色)
+->TK-Approving(白色)
+->TK-Approved(白色)
+->TK-Assigned(蓝色)
+->TK-Dev(黄色)
+->TK-DevTest(黄色)
+->TK-Fixed(绿色)
+->TK-Verified(灰色)
+->TK-Released(灰色)
+
+开发过程中，
+项目经理（组长）需要监控白色部分的Ticket。
+担当（开发，测试）需要指派到自己头上的Ticket，并及时反馈状态。
+
+发布前一周，
+担当及组长需要对 非绿色Ticket 进行确认。
+如果遗漏，或不能按时纳品，需要增加开发力度或与日方协商可否延期。
+
+发布前一天，所有发布Ticket必须为绿色(TK-Fixed)或灰色(TK-Verified)。
+发布日当天，日方确认后修改Ticket状态（TK-Released）
