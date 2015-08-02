@@ -1,0 +1,9 @@
+快用scala / play websocket:
+
+✔ 学习的三步走：看本书，读代码，敲代码。 @done (15-07-27 23:43)
+☐ `Websocket`的心跳检测例子。
+☐ `Websocket`的第三方付费例子。
+✔ 使用`apache`的`ab`对play进行简单的压力测试。 @done (15-07-28 00:04)
+✔ `ssh` 免密码，自动登陆（公钥私钥）。 @done (15-07-27 23:54)
+✔ `pacmanager` 能记密码的多窗口ssh管理器。 @done (15-07-27 23:56)
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
