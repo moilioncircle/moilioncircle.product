@@ -1,0 +1,30 @@
+科学上网
+
+https://www.zhihu.com/question/25268651
+http://www.zhihu.com/question/24008135
+
+shadowsocks
+
+https://shadowsocks.com/
+https://shadowsocks.org/en/download/clients.html
+https://zh.wikipedia.org/zh-cn/Shadowsocks
+http://vc2tea.com/whats-shadowsocks/
+
+proxychain
+
+http://proxychains.sourceforge.net/
+https://github.com/haad/proxychains
+
+ssh -D
+
+
+big-endian
+网络字节顺序
+CPU相关的主机字节序，x86系列CPU都是little-endian的字节序.
+BOM
+java诞生于soalris平台，最初的solaris运行于SPARC cpu上，
+SUN的SPARC和IBM的POWER PC均是big-endian，所以java也是big-endian。
+
+a) Little-Endian就是低位字节排放在内存的低地址端，高位字节排放在内存的高地址端。
+b) Big-Endian就是高位字节排放在内存的低地址端，低位字节排放在内存的高地址端。
+网络字节序：TCP/IP各层协议将字节序定义为Big-Endian，因此TCP/IP协议中使用的字节序通常称之为网络字节序。

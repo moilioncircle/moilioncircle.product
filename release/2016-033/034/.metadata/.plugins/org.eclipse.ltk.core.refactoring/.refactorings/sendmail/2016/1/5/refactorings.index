@@ -1,0 +1,4 @@
+1453652529218	Extract local variable 'to'
+1453652543377	Extract local variable 'subject'
+1453652559226	Extract local variable 'text'
+1453652595401	Extract method 'sendMail'

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ShowViewDialog">
+		<item value="400" key="DIALOG_WIDTH"/>
+		<item value="org.eclipse.ui.views.ProblemView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="238" key="DIALOG_Y_ORIGIN"/>
+		<item value="457" key="DIALOG_HEIGHT"/>
+		<item value="730" key="DIALOG_X_ORIGIN"/>
+		<item value="1|WenQuanYi Micro Hei|12.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="General"/>
+			<item value="Code Recommenders"/>
+			<item value="Java Browsing"/>
+			<item value="SVN"/>
+			<item value="Web Services"/>
+		</list>
+	</section>
+</section>

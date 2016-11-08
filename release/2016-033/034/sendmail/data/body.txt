@@ -1,0 +1,61 @@
+
+
+{{name}}，
+
+你好，冒昧打扰了。
+我在「智联招聘」上搜到了你的简历，
+以下是我们公司的职位情况。
+
+1.工作内容
+
+我们做的是一个B/S结构的互联网产品，小团队，双休，不加班。
+团队的分工不是那么细，大概分为前/中/后三个层。
+
+前端，和用户体验比较接近，会用到js/css，模版等。
+中端，和服务化和服务治理关系大，java/scala都在用。
+后端，和大数据（不太大），推荐，搜索，监控联系大。
+
+我们的主要开发环境是Ubuntu，idea/eclipse，mysql。
+框架自己搞的，不需要SSH，最好知道Spring，Dubbo。
+也使用scala，hadoop等。
+
+2.能力要求
+
+1） 写过5-10k行代码（非Ctrl-V），读过10k+的代码。
+2） 略懂程序优化和重构，MySql的索引结构，执行计划。
+3） 英语3.14级，要求能面向stackoverflow编程。
+
+3.编程题目
+
+以下内测题目，至少完成一个。
+http://www.moilioncircle.com/actions/006.quiz.case-mini-accounting.html
+http://www.moilioncircle.com/actions/005.quiz.case-blind-date.html
+http://www.moilioncircle.com/actions/004.quiz.case-mini-authentication.html
+http://www.moilioncircle.com/actions/003.quiz.sql-loan-sum.html
+http://www.moilioncircle.com/actions/002.quiz.java-build-sql.html
+题目，都是项目中的具体场景，抽象出来的。
+如果有能力完成，那么未来工作会很轻松加愉快。
+
+4.加分项目
+
+有技术博客，
+或个人作品，
+或开源项目账号（贡献者更好）。
+
+5.提交简历
+
+通过邮件或其他你能发现的途径（有很多），发送以下资料。
+1）必发项：简历（pdf是受欢迎的） //有更新的话，最好发下，否则就算了 ：）
+2）必发项：编程题答案
+3）选发项：博客网址和开源项目账户（不要发送密码）
+4）选发项：个人作品（zip单独压缩，作为附件发送）
+
+6.薪资待遇
+薪资，根据个人能力及可能创造的价值来确定。
+待遇，有米国VPN，用来google和翻墙。
+
+----
+另，若有兴趣，可搜索并关注“攻城狮朋友圈”
+大连地区，圈子不大，可以经常交流和联系 ：）
+智联链接：http://jobs.zhaopin.com/676653228250013.htm
+

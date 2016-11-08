@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_DEFAULT_ENVIRONMENTS_XML=
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1453651568322" defaultVMConnector\="">\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\n<vm id\="1453651095670" name\="1.7.0_79" path\="/home/trydofor/mytools/jenv/candidates/java/1.7.0_79"/>\n<vm id\="1453651568322" name\="1.8.0_45" path\="/home/trydofor/mytools/jenv/candidates/java/1.8.0_45"/>\n</vmType>\n</vmSettings>\n

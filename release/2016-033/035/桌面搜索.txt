@@ -1,0 +1,15 @@
+10 Free desktop Search Software
+
+谷歌桌面搜索 Google Desktop 为什么会停止更新？有没有更好的替代品？
+https://www.zhihu.com/question/20065273
+
+http://lifehacker.com/5988004/five-best-desktop-search-applications
+http://listoffreeware.com/list-of-best-free-desktop-file-search-software/
+
+docfetcher.sourceforge.net
+
+ag
+http://geoff.greer.fm/ag/
+
+find 
+grep

@@ -1,0 +1,8 @@
+PHP新手不专业指南:
+  ☐ 最佳入口 http://www.phptherightway.com/
+  ☐ 运行环境 
+    ☐ php -S
+    ☐ php+apache http://www.trydofor.com/3x/
+    ☐ docker https://hub.docker.com/
+  ☐ 调试 xdebug
+  ☐ 编辑器 Aptana，sublime，phpstorm

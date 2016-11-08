@@ -1,0 +1,39 @@
+package com.example;
+
+import javax.mail.internet.MimeMessage;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+
+@SpringBootApplication
+public class SendmailApplication implements CommandLineRunner{
+
+	@Autowired
+	private JavaMailSender javaMailSender;
+	
+	@Value("${mail.user}")
+	private String from;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(SendmailApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		MimeMessage msg =  javaMailSender.createMimeMessage();
+		MimeMessageHelper helper = new MimeMessageHelper(msg);
+		helper.setFrom(from);
+		String to = "trydofor@qq.com";
+		helper.setTo(to);
+		helper.setSubject("test");
+		helper.setText("body");
+		javaMailSender.send(msg);
+		
+	}
+}
