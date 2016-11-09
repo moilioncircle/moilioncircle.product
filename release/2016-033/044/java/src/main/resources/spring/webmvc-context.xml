@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder file-encoding="UTF-8" ignore-resource-not-found="false" ignore-unresolvable="false" local-override="true"
+                                  location="classpath*:r044-config.properties"
+    />
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.moilion.circle.r044.controller"/>
+
+    <bean id="cdnConfig" class="com.moilion.circle.r044.interceptor.cdn.CdnConfig">
+        <property name="host" value="${cdn.host}"/>
+        <property name="version" value="${cdn.version}"/>
+        <property name="scope" value="${cdn.scope}"/>
+        <property name="china">
+            <set>
+                <value>127.0.0.1</value>
+            </set>
+        </property>
+    </bean>
+
+    <mvc:interceptors>
+        <bean class="com.moilion.circle.r044.interceptor.CdnInterceptor">
+            <property name="cdnConfig" ref="cdnConfig"/>
+        </bean>
+    </mvc:interceptors>
+
+    <mvc:annotation-driven/>
+    <mvc:default-servlet-handler/>
+
+</beans>
