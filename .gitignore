@@ -1,0 +1,19 @@
+#filter project file
+*.class
+*.log
+.project
+.classpath
+.settings/
+
+# Package Files #
+*.zip
+*.jar
+*.war
+*.ear
+*.iml
+target/
+.idea/
+
+# mac os #
+.DS_Store
+

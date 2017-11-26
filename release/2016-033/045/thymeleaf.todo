@@ -1,0 +1,28 @@
+Thymeleaf之两个实用扩展:
+
+ ☐ 介绍
+ ☐   性能，例子
+ ☐   文档，语法
+ ☐ 演示2个扩展
+ ☐   .html -> controller? -> view
+ ☐   widget 增强 include，可自动绑定model
+ ☐ 问题
+ ☐   dtd
+ ☐   angularjs+inline
+
+默认情况下，UrlBasedViewResolver 可以把没有绑定的view以模板形式解析
+但是，我们希望使用相同的扩展名，比如 *.html，而不是一个*.html,一个 *.htm
+
+As an example, with JSP as a view technology, 
+you can use the UrlBasedViewResolver. 
+This view resolver translates a view name to a URL and hands the request over to the 
+RequestDispatcher to render the view.
+
+http://www.thymeleaf.org/documentation.html
+
+例子 https://github.com/thymeleaf/thymeleafexamples-stsm
+性能 https://github.com/jreijn/spring-comparing-template-engines/issues/19
+
+扩展 http://www.thymeleaf.org/doc/articles/sayhelloextendingthymeleaf5minutes.html
+ng http://stackoverflow.com/questions/29199089/thymeleaf-value-send-angularjs-ng-onclick-method
+dtd http://stackoverflow.com/questions/25132189/thymleaf-unsupported-entity-requested-with-publicid-null

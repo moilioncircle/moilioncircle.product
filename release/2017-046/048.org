@@ -1,0 +1,30 @@
+* 如何低效率写代码
+** 快捷键篇 
+*** 开始高效的入：Help/Menu/Ctrl-Shift-A
+*** 扩张选择区(词，句，行，块)：Ctrl-w
+*** 行操作，复制，删除，上下移动：Ctrl-Alt-<Up>
+*** 快速打开文件,类：Shift*2/Ctrl-e/Ctrl-Shift-n
+*** 查看文档，源码：Ctrl-q/Ctrl-Alt-<Btn1>
+*** 自动完成：Alt-<Enter>/Ctrl-Alt-<Enter>/Alt-<Insert>/Ctrl-i/Ctrl-o
+*** Alt-<Btn1> 列编辑:Ctrl-<Right>/Ctrl-Shift-<Right>/Ctrl-End
+
+** 高效场景
+*** Postfix Completion :var/for
+*** Live Templates :Ctrl-j
+*** 查看 git log (无事 Gui，有事命令行)
+*** 快速的复制 Bean 属性，不反射，可享受重构便利。
+*** 快速的把 Bean 内容写入 Map，可使 Model 解耦。
+
+** 实用插件
+*** AceJump 快速跳转字符或行(Ctrl-;,Ctrl-Shift-;)。
+*** ideaVim vim 模拟器(Alt-Spc，使用系统剪切板，有学习曲线)
+*** emacsIDEAs 提供跳转和不选择即操作的生产力(不太推荐但很好用)。
+*** FindBugs-IDEA 提高代码质量。
+*** Grep Console 对控制台输出的 ERROR 有颜色标记。
+*** Relative Line Numbers 显示相对行号，便于跳转。
+*** MultiHighlight 阅读代码时，多处高亮(Ctrl-')。
+*** String Manipulation 对字符串的各种操作和转换。
+*** OpenInTerminal 支持 Lin/Win/Mac 在此打开控制台。
+*** Eclipse Code Formatter 统一格式化模板，团队更融洽。
+*** Statistic 代码统计，编码 5 万才入门，对自己和项目有个了解。
+*** .ignore 和版本管理中 ignore 有关的。

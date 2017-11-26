@@ -1,0 +1,6 @@
+ SpringMvc为CDN加版本号:
+
+ ☐ Embedding Jetty 更便捷的启动和调试。
+ ☐ Servlet容器加载：Context→listener→filter→servlet
+ ☐ SpringMvc的3个XML和2个Context，会引发@Value注入不到。
+ ☐ 中国IP段判断，TreeMap
