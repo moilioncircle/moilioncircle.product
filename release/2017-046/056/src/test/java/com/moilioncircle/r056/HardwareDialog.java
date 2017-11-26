@@ -6,11 +6,9 @@
 package com.moilioncircle.r056;
 
 
+import com.alee.laf.WebLookAndFeel;
 import com.moilioncircle.r056.serialport.WeigherSdk;
-import jssc.SerialPortException;
-import sun.misc.IOUtils;
 
-import javax.imageio.ImageIO;
 import javax.print.DocFlavor;
 import javax.print.PrintService;
 import javax.print.PrintServiceLookup;
@@ -18,16 +16,6 @@ import javax.print.attribute.HashPrintRequestAttributeSet;
 import javax.print.attribute.PrintRequestAttributeSet;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.awt.print.Book;
-import java.awt.print.PageFormat;
-import java.awt.print.Printable;
-import java.awt.print.PrinterJob;
-import java.io.File;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -223,27 +211,27 @@ public class HardwareDialog extends JDialog {
                                         .addComponent(lblManage, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
                                         .addComponent(cmbPrinterManage, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
                                         .addComponent(btnPrintManage, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(cmbPaperManage, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(cmbPaperManage, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                         .addComponent(lblExpress, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
                                         .addComponent(btnPrintExpress, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(cmbPaperExpress, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cmbPaperExpress, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
                                         .addComponent(cmbPrinterExpress, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                         .addComponent(lblCarema, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnCaremaOpen)
-                                        .addComponent(btnCaremaClose)
-                                        .addComponent(btnSnap)
-                                        .addComponent(txtPicture))
+                                        .addComponent(btnCaremaOpen, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnCaremaClose, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnSnap, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtPicture, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                         .addComponent(lblWeigher, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
                                         .addComponent(cmbWeigher, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnWeigherOpen)
-                                        .addComponent(btnWeigherClose)
-                                        .addComponent(btnWeigh))
+                                        .addComponent(btnWeigherOpen, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnWeigherClose, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnWeigh, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
                                         .addComponent(lblPictureReview, GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
@@ -333,6 +321,11 @@ public class HardwareDialog extends JDialog {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
+                try {
+                    WebLookAndFeel.install();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 HardwareDialog dialog = new HardwareDialog();
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
