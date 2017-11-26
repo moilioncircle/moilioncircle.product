@@ -13,6 +13,7 @@
 *.iml
 target/
 .idea/
+release/draft/
 
 # mac os #
 .DS_Store
